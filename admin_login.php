@@ -96,4 +96,3 @@ require 'mysqlConnect.php';
 
   </body>
 </html>
-nombre
