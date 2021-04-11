@@ -20,7 +20,7 @@ require 'attendant_details.php';
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
-    <!-- Custom styles for this template -->
+    <!-- Estilos personalizados para esta página -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
 
@@ -37,14 +37,14 @@ require 'attendant_details.php';
 
   <section id="container" >
       <!-- **********************************************************************************************************************************************************
-      TOP BAR CONTENT & NOTIFICATIONS
+      Contenido barra superior y notificaciones
       *********************************************************************************************************************************************************** -->
-      <!--header start-->
+      <!--inicio header-->
       <header class="header black-bg">
 
-            <!--logo start-->
+            <!--inicio logo-->
             <a href="index.php" class="logo"><b>Smart-parking</b></a>
-            <!--logo end-->
+            <!--fin logo-->
                <div class="top-menu">
             	<ul class="nav pull-right top-menu">
                     <li><a class="logout" href="attendant_login.php" style="background-color:#ffd777;">Logout</a></li>
@@ -52,15 +52,15 @@ require 'attendant_details.php';
             </div>
 
         </header>
-      <!--header end-->
+      <!--fin header-->
 
       <!-- **********************************************************************************************************************************************************
-      MAIN SIDEBAR MENU
+      Menú barra lateral principal (sidebar)
       *********************************************************************************************************************************************************** -->
-      <!--sidebar start-->
+      <!--inicio sidebar-->
       <aside>
           <div id="sidebar"  class="nav-collapse ">
-              <!-- sidebar menu start-->
+              <!-- inicio menú sidebar-->
               <ul class="sidebar-menu" id="nav-accordion">
                     
                   <li class="mt">
@@ -71,15 +71,15 @@ require 'attendant_details.php';
                       </a>
                   </li>
               </ul>
-              <!-- sidebar menu end-->
+              <!-- fin menú sidebar-->
           </div>
       </aside>
-      <!--sidebar end-->
+      <!--fin sidebar-->
 
       <!-- **********************************************************************************************************************************************************
-      MAIN CONTENT
+      Contenido principal (main content)
       *********************************************************************************************************************************************************** -->
-      <!--main content start-->
+      <!--inicio main content-->
       <section id="main-content">
           <section class="wrapper">
 				<div class="row">
@@ -153,12 +153,12 @@ if(isset($_GET['delete']))
 		</section><!--wrapper -->
       </section><!-- /MAIN CONTENT -->
 
-      <!--main content end-->
+      <!--fin main content-->
 
-      <!--footer end-->
+      <!--fin footer-->
   </section>
 
-    <!-- js placed at the end of the document so the pages load faster -->
+    <!-- js puesto al final del documento para que la página cargue más rápido -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
@@ -166,13 +166,13 @@ if(isset($_GET['delete']))
     <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
 
 
-    <!--common script for all pages-->
+    <!--Script general para todas las páginas-->
     <script src="assets/js/common-scripts.js"></script>
 
-    <!--script for this page-->
+    <!--Script para esta página-->
 
   <script>
-      //custom select box
+      //cuadro de selección personalizado (custom select box)
 
       $(function(){
           $('select.styled').customSelect();

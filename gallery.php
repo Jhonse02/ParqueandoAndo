@@ -18,7 +18,7 @@ require 'update_slots.php';
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
-    <!-- Custom styles for this template -->
+    <!-- Estilos personalizados para esta página -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
 
@@ -32,25 +32,25 @@ require 'update_slots.php';
   <body>
     <section id="container" >
         <!-- **********************************************************************************************************************************************************
-        TOP BAR CONTENT & NOTIFICATIONS
+        Contenido barra superior y notificaciones
         *********************************************************************************************************************************************************** -->
-        <!--header start-->
+        <!--inicio header-->
         <header class="header black-bg">
 
-              <!--logo start-->
+              <!--inicio logo-->
               <a href="index.php" class="logo"><b>Smart-parking</b></a>
-              <!--logo end-->
+              <!--fin logo-->
             
           </header>
-      <!--header end-->
+      <!--fin header-->
 
       <!-- **********************************************************************************************************************************************************
-      MAIN SIDEBAR MENU
+      Menú barra lateral principal (sidebar)
       *********************************************************************************************************************************************************** -->
-      <!--sidebar start-->
+      <!--inicio sidebar-->
       <aside>
           <div id="sidebar"  class="nav-collapse ">
-              <!-- sidebar menu start-->
+              <!-- inicio menú sidebar-->
               <ul class="sidebar-menu" id="nav-accordion">
 
                     <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
@@ -63,15 +63,15 @@ require 'update_slots.php';
                       </a>
                   </li>
               </ul>
-              <!-- sidebar menu end-->
+              <!-- fin menú sidebar-->
           </div>
       </aside>
-      <!--sidebar end-->
+      <!--fin sidebar-->
 
       <!-- **********************************************************************************************************************************************************
-      MAIN CONTENT
+      Contenido principal (main content)
       *********************************************************************************************************************************************************** -->
-      <!--main content start-->
+      <!--inicio main content-->
       <section id="main-content">
           <section class="wrapper site-min-height">
           	<h3><i class="fa fa-angle-right"></i> Parkings</h3>
@@ -202,8 +202,8 @@ require 'update_slots.php';
 		</section><! --/wrapper -->
       </section><!-- /MAIN CONTENT -->
 
-      <!--main content end-->
-      <!--footer start-->
+      <!--fin main content-->
+      <!--inicio footer-->
       <footer class="site-footer">
           <div class="text-center">
               &copy; <?php echo date("Y"); ?> Copyright.
@@ -212,10 +212,10 @@ require 'update_slots.php';
               </a>
           </div>
       </footer>
-      <!--footer end-->
+      <!--fin footer-->
   </section>
 
-    <!-- js placed at the end of the document so the pages load faster -->
+    <!-- js puesto al final del documento para que la página cargue más rápido -->
 	<script src="assets/js/fancybox/jquery.fancybox.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
@@ -223,10 +223,10 @@ require 'update_slots.php';
     <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
 
 
-    <!--common script for all pages-->
+    <!--Script general para todas las páginas-->
     <script src="assets/js/common-scripts.js"></script>
 
-    <!--script for this page-->
+    <!--Script para esta página-->
 
   <script type="text/javascript">
       $(function() {
@@ -237,7 +237,7 @@ require 'update_slots.php';
   </script>
 
   <script>
-      //custom select box
+      //cuadro de selección personalizado (custom select box)
 
       $(function(){
           $("select.styled").customSelect();
