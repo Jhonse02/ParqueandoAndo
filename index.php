@@ -134,7 +134,7 @@ $(".modal-transparent").on('hidden.bs.modal', function () {
          <div class="col-md-4"></div>
          <div class="col-md-4">
                <div class="page-header">
-                 <center><h1 class="colors">Parqueadero Web</h1></center>
+                 <center><h1 class="colors">Acceso Usuarios</h1></center>
                </div>
          </div>
          <div class="col-md-4"></div>
@@ -193,10 +193,10 @@ $(".modal-transparent").on('hidden.bs.modal', function () {
                      <center><h3 class="colors">Acceder</h3></center>
                    </div>
              <label for=""></label>
-             <input type="text" name="email" id="" placeholder="email" class="email">
+             <input type="text" name="email" id="" placeholder="correo" class="email">
 
              <label for=""></label>
-             <input type="password" name="password" id="" placeholder="password" class="pass">
+             <input type="password" name="password" id="" placeholder="contraseña" class="pass">
 
              <button type="submit" name="login">Acceder</button>
               <label for=""></label>
