@@ -132,7 +132,7 @@ require 'update_slots.php';
                   }
                 }
                 ?>
-                <a type ="button" href="attendant.php" class="btn btn-dark btn-lg">Agregar</button> 
+                <a type ="button" href="attendant.php" class="btn btn-dark btn-lg">Agregar</a> 
 	                  	  </div>
 	                  </div>
 				</div>
