@@ -10,7 +10,8 @@ require 'update_slots.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Portal Web Parqueadero</title>
+    <title>Acceso Usuarios</title>
+	<link rel="icon" href="assets/img/logo.ico" />
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -101,7 +102,7 @@ var regMail = /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{
     }
     else
     {
-    document.getElementById("emailstatus").innerHTML  = "<span class='valid'>Email address is Valid!</span>";
+    document.getElementById("emailstatus").innerHTML  = "<span class='valid'>Correo no es Valido!</span>";
         status.style.color = "#00838f ";
         $('#regBtn').prop('disabled', false);
         $('#regOwner').prop('disabled', false);
@@ -148,33 +149,33 @@ $(".modal-transparent").on('hidden.bs.modal', function () {
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <center><h4 class="modal-title" style="color:#225556;">All form fields are required.</h4></center>
+          <center><h4 class="modal-title" style="color:#225556;">Todos los campos del formulario son obligatorios.</h4></center>
         </div>
         <div class="modal-body">
           <form  id="regForm" action="register.php" method="POST" enctype="multipart/form-data">
 
   <div class="form-group">
-      <label for="name" >Name:</label>
+      <label for="name" >Nombre:</label>
       <input type="text" name="name" id="name"  class="text ui-widget-content ui-corner-all">
   </div>
 
   <div class="form-group">
-      <label for="email">Email</label>
+      <label for="email">Correo</label>
       <input type="email" id="email" name="email" placeholder="" class="text ui-widget-content ui-corner-all"  onchange="email_validate(this.value);" required>
             <p id="emailstatus"></p>
   </div>
 
    <div class="form-group">
-      <label for="password">Password</label>
+      <label for="password">Contraseña</label>
      <input type="password" id="password" name="password" placeholder="" class="text ui-widget-content ui-corner-all" required>
   </div>
 
    <div class="form-group">
-      <label for="password">Confirm Password</label>
+      <label for="password">Confirmar Contraseña</label>
       <input type="password" class="text ui-widget-content ui-corner-all" id="password_confirm" name="password_confirm" placeholder=""  onkeyup="checkPass(); return false;" required>
   </div>
 
-<button type="submit" id="regBtn" class="form-control" name="register">create account</button>
+<button type="submit" id="regBtn" class="form-control" name="register">crear cuenta</button>
         </div>
         </form>
       </div>
@@ -232,7 +233,7 @@ if(mysqli_num_rows($result) > 0)
     else
     {
       //return false
-       echo"<script>alert('wrong user details,try again!')</script>";
+       echo"<script>alert('datos de usuario incorrectos, inténtelo de nuevo!')</script>";
        echo"<script>window.open('index.php','_self')</script>";
        exit();
     }
