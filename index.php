@@ -190,7 +190,7 @@ $(".modal-transparent").on('hidden.bs.modal', function () {
 
            <form enctype="multipart/form" action="index.php" method="POST" id="">
                    <div class="page-header">
-                     <center><h3 class="colors">Login</h3></center>
+                     <center><h3 class="colors">Acceder</h3></center>
                    </div>
              <label for=""></label>
              <input type="text" name="email" id="" placeholder="email" class="email">
@@ -198,9 +198,9 @@ $(".modal-transparent").on('hidden.bs.modal', function () {
              <label for=""></label>
              <input type="password" name="password" id="" placeholder="password" class="pass">
 
-             <button type="submit" name="login">login</button>
+             <button type="submit" name="login">Acceder</button>
               <label for=""></label>
-              <button type="button" data-toggle="modal" data-target="#myModal">Sign Up</button>
+              <button type="button" data-toggle="modal" data-target="#myModal">Registrarse</button>
 
 
            </form>
