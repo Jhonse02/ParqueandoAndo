@@ -241,7 +241,7 @@ if(mysqli_num_rows($result) > 0)
 }
 else{
 
-    echo"<script>alert('wrong user details,try again!')</script>";
+    echo"<script>alert('datos de usuario incorrectos, inténtelo de nuevo!')</script>";
     echo"<script>window.open('index.php','_self')</script>";
     exit();
 }
