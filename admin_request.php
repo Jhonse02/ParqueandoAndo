@@ -12,7 +12,7 @@ require 'update_slots.php';
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
     <title>parqueadero</title>
-    <link rel="icon" href="assets/img/ny.jpg" />
+    <link rel="icon" href="assets/img/logo.ico" />
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">

@@ -12,7 +12,7 @@ session_start();
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
     <title>Parqueadero</title>
-    <link rel="icon" href="assets/img/ny.jpg" />
+    <link rel="icon" href="assets/img/logo.ico" />
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -38,7 +38,7 @@ session_start();
       <header class="header black-bg">
 
             <!--inicio logo-->
-            <a href="index.php" class="logo"><b>Parqueo</b></a>
+            <a href="index.php" class="logo"><b>ParqueandoAndo-Agregar</b></a>
             <!--fin logo-->
 
         </header>
@@ -74,7 +74,7 @@ session_start();
       <!--inicio main content-->
       <section id="main-content">
           <section class="wrapper site-min-height">
-          	<h3><i class="fa fa-angle-right"></i> Agregar Parqueadero</h3>
+          	<h3><i class="fa fa-angle-right"></i>Agregar Parqueadero</h3>
           	<div class="row mt">
           		<div class="col-lg-12">
               <form class="form-horizontal" action="upload.php" method="POST" enctype="multipart/form-data">

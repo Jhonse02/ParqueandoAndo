@@ -13,7 +13,7 @@ require 'update_slots.php';
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
     <title>Parqueaderos - PA</title>
-    <link rel="icon" href="assets/img/ny.jpg" />
+    <link rel="icon" href="assets/img/logo.ico" />
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -42,7 +42,7 @@ require 'update_slots.php';
       <header class="header black-bg">
 
             <!-- inicio logo -->
-            <a href="index.php" class="logo"><b>ParqueandoAndo</b></a>
+            <a href="index.php" class="logo"><b>ParqueandoAndo-Ver Parqueaderos</b></a>
             <!-- fin logo -->
 
         </header>
