@@ -33,23 +33,25 @@ session_start();
 <body>
   <section id="container" >
       <!-- **********************************************************************************************************************************************************
-      TOP BAR CONTENT & NOTIFICATIONS
+      Contenido barra superior y notificaciones
       *********************************************************************************************************************************************************** -->
-      <!--header start-->
+      <!-- inicio header -->
       <header class="header black-bg">
 
-            <!--logo start-->
+            <!-- inicio logo -->
             <a href="index.php" class="logo"><b>Parqueo</b></a>
-            <!--logo end-->
+            <!-- inicio logo -->
 
         </header>
-      <!--header end-->
-      MAIN SIDEBAR MENU
+      <!-- fin header -->
+      
+      <!-- **********************************************************************************************************************************************************
+      Menú barra lateral principal (sidebar)
       *********************************************************************************************************************************************************** -->
-      <!--sidebar start-->
+      <!-- inicio sidebar -->
       <aside>
           <div id="sidebar"  class="nav-collapse ">
-              <!-- sidebar menu start-->
+              <!-- inicio menú sidebar -->
               <ul class="sidebar-menu" id="nav-accordion">
 
                   <p class="centered"><a href="#"><img src="assets/img/assistant-144.png" class="img-circle" width="60"></a></p>
@@ -61,15 +63,15 @@ session_start();
                       </a>
                   </li>
               </ul>
-              <!-- sidebar menu end-->
+              <!-- fin menú sidebar -->
           </div>
       </aside>
-      <!--sidebar end-->
+      <!-- fin sidebar -->
 
       <!-- **********************************************************************************************************************************************************
-      MAIN CONTENT
+      Contenido principal (main content)
       *********************************************************************************************************************************************************** -->
-      <!--main content start-->
+      <!-- inicio main content -->
       <section id="main-content">
           <section class="wrapper site-min-height">
           	<h3><i class="fa fa-angle-right"></i> Agregar nuevo asistente</h3>
@@ -115,8 +117,8 @@ session_start();
 <!--/wrapper -->
 </section><!-- /MAIN CONTENT -->
 
-<!--main content end-->
-<!--footer start-->
+<!-- fin main content -->
+<!-- fin footer -->
 <?php
 if(isset($_POST['sub'])){
   $Fname=mysqli_real_escape_string($con,$_POST['Fname']);
@@ -153,9 +155,9 @@ if(isset($_POST['sub'])){
         </a>
     </div>
 </footer>
-<!--footer end-->
+<!-- fin footer -->
 </section>
-<!-- js placed at the end of the document so the pages load faster -->
+<!-- js puesto al final del documento para que la página cargue más rápido -->
 <script src="script.js"></script>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
@@ -164,12 +166,12 @@ if(isset($_POST['sub'])){
 <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
 <script src="assets/js/jquery.scrollTo.min.js"></script>
 <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
-<!--common script for all pages-->
+<!-- Script general para todas las páginas -->
 <script src="assets/js/common-scripts.js"></script>
 
 
 
-<!--script for this page-->
+<!--script para esta página -->
 
 </body>
 </html>

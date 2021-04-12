@@ -25,7 +25,7 @@ else {
     <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
     <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">
 
-    <!-- Custom styles for this template -->
+    <!-- Estilos personalizados para esta plantilla -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
 
@@ -42,29 +42,29 @@ else {
 
   <section id="container" >
       <!-- **********************************************************************************************************************************************************
-      TOP BAR CONTENT & NOTIFICATIONS
+      Contenido de la barra superior y notificaciones
       *********************************************************************************************************************************************************** -->
-      <!--header start-->
+      <!-- inicio header -->
       <header class="header black-bg">
 
-            <!--logo start-->
+            <!-- inicio logo -->
             <a href="index.php" class="logo"><b>Smart-parking</b></a>
-            <!--logo end-->
+            <!-- inicio logo -->
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
                     <li><a class="logout" href="logout.php" style="background-color:#ffd777;">Logout</a></li>
             	</ul>
             </div>
         </header>
-      <!--header end-->
+      <!-- fin header -->
 
       <!-- **********************************************************************************************************************************************************
-      MAIN SIDEBAR MENU
+      Menú barra lateral principal (sidebar)
       *********************************************************************************************************************************************************** -->
-      <!--sidebar start-->
+      <!-- inicio sidebar -->
       <aside>
           <div id="sidebar"  class="nav-collapse ">
-              <!-- sidebar menu start-->
+              <!-- inicio menú sidebar -->
               <ul class="sidebar-menu" id="nav-accordion">
 
               	  <p class="centered"><a href="#"><img src="assets/img/assistant-144.png" class="img-circle" width="60"></a></p>
@@ -75,15 +75,15 @@ else {
               <ul>
                   <li><a  href="request.php">Requests</a></li>
               </ul>
-              <!-- sidebar menu end-->
+              <!-- inicio menú sidebar -->
           </div>
       </aside>
-      <!--sidebar end-->
+      <!-- fin sidebar -->
 
       <!-- **********************************************************************************************************************************************************
-      MAIN CONTENT
+      Contenido contenido principal (main content)
       *********************************************************************************************************************************************************** -->
-      <!--main content start-->
+      <!--inicio main content -->
       <section id="main-content">
           <section class="wrapper">
 
@@ -95,14 +95,14 @@ else {
 
 
                       </div>
-                      <!--custom chart end-->
+                      <!-- fin custom chart -->
 					</div><!-- /row -->
 
                   </div><!-- /col-lg-9 END SECTION MIDDLE -->
 
 
       <!-- **********************************************************************************************************************************************************
-      RIGHT SIDEBAR CONTENT
+      Contenido barra lateral derecha
       *********************************************************************************************************************************************************** -->
 
 
@@ -113,10 +113,10 @@ else {
           </section>
       </section>
 
-      <!--footer end-->
+      <!-- fin footer -->
   </section>
 
-    <!-- js placed at the end of the document so the pages load faster -->
+    <!-- js puesto al final del documento para que la página cargue más rápido -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/jquery-1.8.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -126,30 +126,30 @@ else {
     <script src="assets/js/jquery.sparkline.js"></script>
 
 
-    <!--common script for all pages-->
+    <!-- Script general para todas las páginas -->
     <script src="assets/js/common-scripts.js"></script>
 
     <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
     <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
 
-    <!--script for this page-->
+    <!--script para esta página -->
     <script src="assets/js/sparkline-chart.js"></script>
 	<script src="assets/js/zabuto_calendar.js"></script>
 
 	<script type="text/javascript">
         $(document).ready(function () {
         var unique_id = $.gritter.add({
-            // (string | mandatory) the heading of the notification
+            // (string | obligatorio) el encabezado de esta notificacion
             title: 'Welcome to smart-parking!',
-            // (string | mandatory) the text inside the notification
+            // (string | obligatorio) El texto dentro de la notificacion
             text: 'Makes your parking easier.'
-            // (string | optional) the image to display on the left
+            // (string | opcional) La imagen puesta en la izquierda
             image: 'assets/img/ui-sam.jpg',
-            // (bool | optional) if you want it to fade out on its own or just sit there
+            // (bool | opcional) Si quieres que se desvanezca por sí solo o se quede ahí
             sticky: true,
-            // (int | optional) the time you want it to be alive for before fading out
+            // (int | opcional) El tiempo que quieres que dure antes que se desvanezca
             time: '',
-            // (string | optional) the class name you want to apply to that specific message
+            // (string | opcional) El nombre de la clase al que quieras aplicar este mensaje
             class_name: 'my-sticky-class'
         });
 

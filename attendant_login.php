@@ -32,7 +32,7 @@ require 'mysqlConnect.php';
   <body>
 
       <!-- **********************************************************************************************************************************************************
-      MAIN CONTENT
+      Contenido principal
       *********************************************************************************************************************************************************** -->
 
 	  <div id="login-page">
@@ -69,12 +69,12 @@ require 'mysqlConnect.php';
 	  	</div>
 	  </div>
 
-    <!-- js placed at the end of the document so the pages load faster -->
+    <!-- js puesto al final del documento para que la página cargue más rápido -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 
     <!--BACKSTRETCH-->
-    <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+    <!-- Se puede usar una imagen de cualquier tamaño. Este script adaptará la imagen a cualquier pantalla.-->
     <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
     <script>
         $.backstretch("assets/img/Smp.jpg", {speed: 500});

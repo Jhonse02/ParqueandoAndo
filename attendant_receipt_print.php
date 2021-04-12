@@ -165,7 +165,7 @@ if($totalt >= $hours){
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- METISMENU SCRIPTS -->
     <script src="assets/js/jquery.metisMenu.js"></script>
-     <!-- DATA TABLE SCRIPTS -->
+     <!-- Scripts tablas de datos -->
         <script type="text/javascript" src="dataTables/js/jquery.min.js"></script>
          <script type="text/javascript" src="dataTables/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="dataTables/js/jquery.dataTables.min.js"></script>
