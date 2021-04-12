@@ -12,7 +12,7 @@ require 'mysqlConnect.php';
     <meta name="author" content="Dashboard">
 
     <title>Admin</title>
-
+    <link rel="icon" href="assets/img/logo.ico" />
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
