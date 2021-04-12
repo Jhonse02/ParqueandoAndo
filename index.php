@@ -164,7 +164,11 @@ $(".modal-transparent").on('hidden.bs.modal', function () {
       <input type="email" id="email" name="email" placeholder="" class="text ui-widget-content ui-corner-all"  onchange="email_validate(this.value);" required>
             <p id="emailstatus"></p>
   </div>
-
+  <select name="location" class="form-control">
+                 <option value="Moto">Moto</option>
+                 <option value="Carro">Carro</option>
+                 <option value="Bisicleta">Bisicleta</option>
+              </select>
    <div class="form-group">
       <label for="password">Contraseña</label>
      <input type="password" id="password" name="password" placeholder="" class="text ui-widget-content ui-corner-all" required>

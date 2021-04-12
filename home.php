@@ -16,7 +16,7 @@ else {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Smart Parking Web Portal</title>
+    <title>Acceso Usuarios</title>
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -69,7 +69,7 @@ else {
       <div class="container">
          <div class="col-md-3"></div>
          <div class="col-md-8">
-                 <center><h1 class="colors"><a href="home.php" style="text-decoration: none; color:white;">Parqueadero</a></h1></center>
+                 <center><h1 class="colors"><a href="home.php" style="text-decoration: none; color:white;">Selecciona Un Parqueadero</a></h1></center>
 
          </div>
          <div class="col-md-1"></div>
@@ -86,8 +86,9 @@ else {
                       <center>
                         <h3><?=$name?></h3>
                         <p>(<?=$email?>)</p>
-                        <p><i id="#online" class="fa fa-circle" aria-hidden="true"></i> Online</p>
-                        <p><a href="logout.php"><i class="fa fa-power-off" aria-hidden="true"></i> lOGOUT</a></p>
+                        <p><i id="#online" class="fa fa-circle" aria-hidden="true"></i> En Linea</p>
+                        <p><a href="logout.php"><i class="fa fa-power-off" aria-hidden="true"></i> cerrar sesión
+</a></p>
                         </center>
                       </div>
                     </div>

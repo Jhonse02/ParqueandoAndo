@@ -12,7 +12,7 @@ if(isset($_POST['register'])){
 	$password_confirm= password_hash($_POST['password_confirm'], PASSWORD_DEFAULT);
 
 	if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
-		echo"<script>alert('your email is not valid!')</script>";
+		echo"<script>alert('¡Su correo eléctronico no es valido!')</script>";
       echo"<script>window.open('index.php','_self')</script>";
 		exit();
 	}
@@ -22,7 +22,7 @@ if(isset($_POST['register'])){
 	$check_email=mysqli_num_rows($run_email);
 
 	if($check_email==1){
-		echo"<script>alert('This email is already registered,try another one!')</script>";
+		echo"<script>alert('Este correo electrónico ya está registrado, ¡prueba con otro!')</script>";
       echo"<script>window.open('index.php','_self')</script>";
 		exit();
 	}
@@ -31,7 +31,7 @@ if(isset($_POST['register'])){
 		$insert="INSERT INTO `users` (`id`, `name`, `email`, `password`,`password_confirm`) VALUES (NULL, '$name', '$email', '$password', '$password_confirm')";
 		$run_insert=mysqli_query($con,$insert);
 		if($run_insert){
-			echo"<script>alert('registration successful,welcome!')</script>";
+			echo"<script>alert('registro exitoso, bienvenido!')</script>";
       echo"<script>window.open('home.php','_self')</script>";
 
 
