@@ -4,7 +4,7 @@ require 'update_slots.php';
 require 'mysqlConnect.php';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,14 +34,14 @@ require 'mysqlConnect.php';
 	  	<div class="container">
 
 		      <form class="form-login" action="admin_login.php" method="post">
-		        <h2 class="form-login-heading">sign in now</h2>
+		        <h2 class="form-login-heading">REGISTRARSE</h2>
 		        <div class="login-wrap">
 		            <input type="text" name="email" class="form-control" placeholder="email" autofocus>
 		            <br>
 		            <input type="password" name="password"  class="form-control" placeholder="Password">
               </br>
             </br>
-		            <button class="btn btn-theme btn-block" href="index.php" name='admin_login'  type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
+		            <button class="btn btn-theme btn-block" href="index.php" name='admin_login'  type="submit"><i class="fa fa-lock"></i>INICIAR</button>
 		          <!-- Modal -->
 		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
 		              <div class="modal-dialog">
