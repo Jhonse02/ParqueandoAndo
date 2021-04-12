@@ -39,7 +39,7 @@ session_start();
       <header class="header black-bg">
 
             <!-- inicio logo -->
-            <a href="index.php" class="logo"><b>Parqueo</b></a>
+            <a href="index.php" class="logo"><b>ParqueANDOANDO</b></a>
             <!-- inicio logo -->
 
         </header>

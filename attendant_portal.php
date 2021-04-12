@@ -48,7 +48,7 @@ else {
       <header class="header black-bg">
 
             <!-- inicio logo -->
-            <a href="index.php" class="logo"><b>Smart-parking</b></a>
+            <a href="index.php" class="logo"><b>PARQUEANDOANDO</b></a>
             <!-- inicio logo -->
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">

@@ -39,7 +39,7 @@ require 'update_slots.php';
       <header class="header black-bg">
 
             <!-- inicio logo -->
-            <a href="index.php" class="logo"><b>Parqueadero</b></a>
+            <a href="index.php" class="logo"><b>ParqUEANDOANDO</b></a>
             <!-- fin logo -->
 
         </header>
