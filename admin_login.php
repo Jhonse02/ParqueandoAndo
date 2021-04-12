@@ -40,7 +40,7 @@ require 'mysqlConnect.php';
 		            <br>
 		            <input type="password" name="password"  class="form-control" placeholder="Password">
               </br>
-            </br>
+            </br><strong></strong>
 		            <button class="btn btn-theme btn-block" href="index.php" name='admin_login'  type="submit"><i class="fa fa-lock"></i>INICIAR</button>
 		          <!-- Modal -->
 		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
@@ -84,7 +84,7 @@ require 'mysqlConnect.php';
   $check=mysqli_num_rows($run);
   if($check==0)
   {
-  	echo"<script>alert('password or email is not correct,try again!')</script>";
+  	echo"<script>alert('datos incorrectos, inténtelo de nuevo!')</script>";
   	exit();
   }
   else{
