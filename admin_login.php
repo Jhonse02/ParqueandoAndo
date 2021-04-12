@@ -36,9 +36,9 @@ require 'mysqlConnect.php';
 		      <form class="form-login" action="admin_login.php" method="post">
 		        <h2 class="form-login-heading">REGISTRARSE</h2>
 		        <div class="login-wrap">
-		            <input type="text" name="email" class="form-control" placeholder="email" autofocus>
+		            <input type="text" name="email" class="form-control" placeholder="Correo" autofocus>
 		            <br>
-		            <input type="password" name="password"  class="form-control" placeholder="Password">
+		            <input type="password" name="password"  class="form-control" placeholder="Contraseña">
               </br>
             </br><strong></strong>
 		            <button class="btn btn-theme btn-block" href="index.php" name='admin_login'  type="submit"><i class="fa fa-lock"></i>INICIAR</button>
