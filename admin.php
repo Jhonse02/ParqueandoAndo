@@ -94,7 +94,7 @@ else {
                           <i class="fa fa-pencil"></i>
                           <span>Parqueaderos</span>
                       </a>
-                      <a href="attentant.php">
+                      <a href="attendant.php">
                           <i class="fa fa-plus"></i>
                           <span>Nuevo asistente</span>
                       </a>
