@@ -8,6 +8,7 @@ Premium: http://www.gridgum.com
 
 /* Import fonts */
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 /* BASIC THEME CONFIGURATION */
 body {
@@ -232,7 +233,7 @@ ul.top-menu > li > .logout {
     width: 210px;
     height: 100%;
     position: fixed;
-    background: #424a5d;
+    background: #2c313d;
 }
 
 #sidebar h5 {
@@ -337,8 +338,8 @@ ul.sidebar-menu li ul.sub li.active a {
 ul.sidebar-menu li{
     /*line-height: 20px !important;*/
     margin-bottom: 5px;
-    margin-left:10px;
-    margin-right:10px;
+    margin-left:0px;
+    margin-right:0px;
 }
 
 ul.sidebar-menu li.sub-menu{
@@ -350,11 +351,11 @@ ul.sidebar-menu li a span{
 }
 
 ul.sidebar-menu li a{
-    color: #aeb2b7;
+    color: #8897AB;
     text-decoration: none;
     display: block;
     padding: 15px 0 15px 10px;
-    font-size: 12px;
+    font-size: 15px;
     outline: none;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -364,7 +365,7 @@ ul.sidebar-menu li a{
 }
 
 ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
-    background: #68dff0;
+    background: #22262e;
     color: #fff;
     display: block;
 
@@ -397,7 +398,7 @@ ul.sidebar-menu li a.active i {
 
 /* MAIN CONTENT CONFIGURATION */
 #main-content {
-    margin-left: 210px;
+    margin-left: 10px;
 }
 
 .header, .footer {
@@ -413,14 +414,14 @@ ul.sidebar-menu li a.active i {
 }
 
 .black-bg {
-    background: #424a5d;
-    border-bottom: 1px solid #c9aa5f;
+    background: #22262e;
+    /*border-bottom: 1px solid #c9aa5f;*/
 }
 
 .wrapper {
     display: inline-block;
     margin-top: 60px;
-    padding-left: 15px;
+    padding-left: 220px;
     padding-right: 15px;
     padding-bottom: 15px;
     padding-top: 0px;

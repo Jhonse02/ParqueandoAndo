@@ -35,18 +35,19 @@ else {
     <style>
     a {
     display: block;
-    padding: 8px 20px;
+    padding: 10px 35px;
 }
 
 .left-links li a{
-    color:#b3e5fc !important;
-    font-weight:bold;
-    font-family: tahoma;
-    border-bottom:1px solid #b2ebf2;
+    color:#7D879E !important;
+    /*font-weight:bold;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    /*border-bottom:1px solid #7D879E;*/
 }
 
 .left-links li a:hover{
-    color:#ff5252 !important;
+    color:#ABB8D6 !important;
 }
     </style>
   </head>
@@ -82,19 +83,31 @@ else {
 
               	  <p class="centered"><a href="#"><img src="assets/img/assistant-144.png" class="img-circle" width="60"></a></p>
               	  <h5 class="centered"> <?php echo $_SESSION['email']; ?> </h5>
-                     </ul>
-                     <div class="list">
-
-
-                  <ul class="left-links">
-                      <li><a  href="blank.php"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Agregar nuevo Parqueadero</a></li>
-                      <li><a  href="basic_table.php"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Parqueaderos</a></li>
-                      <li><a  href="attendant.php"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Agregar nuevo Asistente</a></li>
-                        <li><a  href="basic_table2.php"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Asistentes</a></li>
-                          <li><a  href="admin_request.php"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Requerimientos</a></li>
-                  </ul>
-                   </div>
-
+                
+                     
+                <li class="mt">
+                      <a href="blank.php">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Nuevo parqueadero</span>
+                      </a>
+                      <a href="basic_table.php">
+                          <i class="fa fa-pencil"></i>
+                          <span>Parqueaderos</span>
+                      </a>
+                      <a href="attendant.php">
+                          <i class="fa fa-plus"></i>
+                          <span>Nuevo asistente</span>
+                      </a>
+                      <a href="basic_table2.php">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Asistentes</span>
+                      </a>
+                      <a href="admin_request.php">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Requerimientos</span>
+                      </a>
+                  </li>       
+            </ul>
               <!-- fin menú sidebar -->
           </div>
       </aside>
