@@ -86,17 +86,9 @@ else {
                 
                      
                 <li class="mt">
-                      <a href="blank.php">
-                          <i class="fa fa-dashboard"></i>
-                          <span>Nuevo parqueadero</span>
-                      </a>
                       <a href="basic_table.php">
                           <i class="fa fa-pencil"></i>
                           <span>Parqueaderos</span>
-                      </a>
-                      <a href="attendant.php">
-                          <i class="fa fa-plus"></i>
-                          <span>Nuevo asistente</span>
                       </a>
                       <a href="basic_table2.php">
                           <i class="fa fa-dashboard"></i>

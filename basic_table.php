@@ -17,6 +17,7 @@ require 'update_slots.php';
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
@@ -42,7 +43,7 @@ require 'update_slots.php';
       <header class="header black-bg">
 
             <!-- inicio logo -->
-            <a href="index.php" class="logo"><b>ParqueandoAndo-Ver Parqueaderos</b></a>
+            <a href="index.php" class="logo"><b>Parqueando Ando</b></a>
             <!-- fin logo -->
 
         </header>
@@ -134,6 +135,7 @@ if(isset($_GET['delete']))
   }
 }
 ?>
+<a type ="button" href="blank.php" class="btn btn-dark btn-lg">Agregar</a> 
 	                  	  </div><!--/content-panel -->
 	                  </div><!-- /col-md-12 -->
 
