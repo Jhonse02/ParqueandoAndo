@@ -44,7 +44,7 @@ while ($parking = mysqli_fetch_array($parkings_result)) {
 
           <li class="list-group-item">
             <div class="input-group">
-              <input type="text" class="form-control"  id="hour<?=$parking_id; ?>" placeholder="Number of Hours" aria-describedby="basic-addon2">
+              <input type="text" class="form-control"  id="hour<?=$parking_id; ?>" placeholder="Numero de Horas" aria-describedby="basic-addon2">
               <span class="input-group-addon" id="basic-addon2">Hours</span>
             </div>
           </li>
@@ -53,7 +53,7 @@ while ($parking = mysqli_fetch_array($parkings_result)) {
         </ul>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
         <button type="button" class="btn btn-primary">Select this space</button>
       </div>
     </div>
