@@ -39,13 +39,29 @@ require 'update_slots.php';
       <!-- **********************************************************************************************************************************************************
       Contenido barra superior y notificaciones 
       *********************************************************************************************************************************************************** -->
-      <!--inicio header -->
+      <!-- inicio header -->
       <header class="header black-bg">
 
             <!-- inicio logo -->
-            <a href="index.php" class="logo"><b>Parqueando Ando</b></a>
+            <a href="index.php" class="logo"><img src="assets/img/assistant-144.png" class="img-circle"><b>Parqueando Ando</b></a>
             <!-- fin logo -->
-
+            <div class="top-menu">
+            	<ul class="nav pull-right top-menu">
+                    <li class="header-user-banner">
+                    
+                    <button class="btn btn-banner btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user mt-button" style="margin-right: 7px;"></i>
+                    <?php echo $_SESSION['email']; ?>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="logout.php">Cerrar sesión</a>
+                    </div>
+                    </li>
+                    <div class="dropdown">
+                    
+                    </div>
+            	</ul>
+            </div>
         </header>
       <!-- fin header -->
 
@@ -57,14 +73,23 @@ require 'update_slots.php';
           <div id="sidebar"  class="nav-collapse ">
               <!-- inicio menú sidebar -->
               <ul class="sidebar-menu" id="nav-accordion">
-
-                    <p class="centered"><a href="#"><img src="assets/img/assistant-144.png" class="img-circle" width="60"></a></p>
-                    <h5 class="centered"> <?php echo $_SESSION['email']; ?></h5>
-
-                  <li class="mt">
+              <li class="mt">
+                <h2 class="ul-sidebar-menu-title">Menús</h2>
                       <a href="admin.php">
-                          <i class="fa fa-dashboard"></i>
+                          <i class="fa fa-home mt-button"></i>
                           <span>Inicio</span>
+                      </a>
+                      <a href="basic_table.php">
+                          <i class="fa fa-car mt-button"></i>
+                          <span>Parqueaderos</span>
+                      </a>
+                      <a href="basic_table2.php">
+                          <i class="fa fa-user mt-button"></i>
+                          <span>Asistentes</span>
+                      </a>
+                      <a href="admin_request.php">
+                          <i class="fa fa-book mt-button"></i>
+                          <span>Requerimientos</span>
                       </a>
                   </li>
               </ul>
