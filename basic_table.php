@@ -118,8 +118,8 @@ require 'update_slots.php';
                       <th>Nombre </th>
                       <th>Espacios </th>
                       <th>Precio </th>
-                      <th>Borrar </th>
                       <th>Editar </th>
+                      <th>Borrar </th>
                       </tr>
 <?php
 $sel="select * from parkings";
