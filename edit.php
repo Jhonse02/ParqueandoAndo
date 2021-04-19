@@ -26,7 +26,7 @@ if(isset($_GET['edit'])){
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>smart-parking</title>
+    <title>ParqueandoAndo</title>
     <link rel="icon" href="assets/img/logo.ico" />
 
     <!-- Bootstrap core CSS -->
@@ -55,7 +55,7 @@ if(isset($_GET['edit'])){
       <header class="header black-bg">
 
             <!--inicio logo-->
-            <a href="index.php" class="logo"><b>smart-parking</b></a>
+            <a href="index.php" class="logo"><b>ParqueandoAndo</b></a>
             <!--fin logo-->
             <div class="top-menu">
             </div>

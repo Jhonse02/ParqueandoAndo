@@ -15,7 +15,7 @@ else {
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>smart-parking</title>
+    <title>ParqueandoAndo</title>
     <link rel="icon" href="assets/img/logo.ico" />
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -140,7 +140,7 @@ else {
         $(document).ready(function () {
         var unique_id = $.gritter.add({
             // (string | obligatorio) el encabezado de esta notificacion
-            title: 'Welcome to smart-parking!',
+            title: 'Bienvenido a ParqueandoAndo!',
             // (string | obligatorio) El texto dentro de la notificacion
             text: 'Makes your parking easier.'
             // (string | opcional) La imagen puesta en la izquierda
