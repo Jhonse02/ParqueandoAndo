@@ -17,15 +17,17 @@ require '../mysqlConnect.php';
 <table class="table  table-bordered table-striped table-hover " >
 <thaed>
   <th>#</th>
-  <th>Parking</th>
-  <th>Location</th>
-  <th>Street</th>
-  <th>Slots</th>
-  <th>Hours</th>
-  <th>Cost</th>
-  <th>When</th>
-  <th>Status</th>
-  <th>Action</th>
+  <th>Parqueadero</th>
+  <th>Localizacion</th>
+  <th>Direccion</th>
+  <th>Zona</th>
+  <th>Hora</th>
+  <th>Costo</th>
+  <th>Vehiculo</th>
+  <th>Placa</th>
+  <th>Fecha</th>
+  <th>Estado</th>
+  <th>Accion</th>
  
 
 
@@ -36,7 +38,7 @@ $customer = $_SESSION['driver_email'];
 if ($_POST) {
     $stat = $_POST['status'];
        
-    $req = "SELECT `requests`.`id`, `parking_id`, `slots`, `hours`, `cost`, `time`, `status`,`location`, `street`, `name` FROM `requests`,`parkings` WHERE `requests`.`parking_id`=`parkings`.`id` AND `requests`.`customer`='$customer' AND `requests`.`status`='$stat'";
+    $req = "SELECT `requests`.`id`, `parking_id`, `slots`, `hours`, `cost`, `time`, `status`,`location`, `street`, `name`, `vehiculo`, `placa` FROM `requests`,`parkings` WHERE `requests`.`parking_id`=`parkings`.`id` AND `requests`.`customer`='$customer' AND `requests`.`status`='$stat'";
 
     $res = mysqli_query($con, $req);
 
@@ -46,6 +48,8 @@ while ($request = mysqli_fetch_array($res)) {
     $slots= $request['slots'];
     $hours = $request['hours'];
     $cost = $request['cost'];
+    $placa= $request['placa'];
+    $vehiculo = $request['vehiculo'];
     $time = $request['time'];
     $stat = $request['status'];
     $location = $request['location'];
@@ -60,6 +64,8 @@ while ($request = mysqli_fetch_array($res)) {
   <td><?=$slots; ?></td>
   <td><?=$hours; ?> hora</td>
   <td>Cop. <?=$cost; ?></td>
+  <td><?=$vehiculo; ?></td>
+  <td><?=$placa; ?></td>
   <td><?=$time; ?></td>
   <td><?=$stat; ?></td>
   <td></td>
@@ -76,7 +82,7 @@ while ($request = mysqli_fetch_array($res)) {
 
 
  $status = 'requested';    
-    $req = "SELECT `requests`.`id`, `parking_id`, `slots`, `hours`, `cost`, `time`, `status`,`location`, `street`, `name` FROM `requests`,`parkings` WHERE `requests`.`parking_id`=`parkings`.`id` AND `requests`.`customer`='$customer' AND `requests`.`status`='$status'";
+    $req = "SELECT `requests`.`id`, `parking_id`, `slots`, `hours`, `cost`, `time`, `status`,`location`, `street`, `name`, `vehiculo`, `placa` FROM `requests`,`parkings` WHERE `requests`.`parking_id`=`parkings`.`id` AND `requests`.`customer`='$customer' AND `requests`.`status`='$status'";
 
     $res = mysqli_query($con, $req);
 
@@ -86,6 +92,8 @@ while ($request = mysqli_fetch_array($res)) {
     $slots= $request['slots'];
     $hours = $request['hours'];
     $cost = $request['cost'];
+    $vehiculo = $request['vehiculo'];
+    $placa = $request['placa'];
     $time = $request['time'];
     $stat = $request['status'];
     $location = $request['location'];
@@ -100,6 +108,8 @@ $url = "print1.php?request_id=".urlencode($id);
   <td><?=$slots; ?></td>
   <td><?=$hours; ?> hora</td>
   <td>Cop. <?=$cost; ?></td>
+  <td><?=$vehiculo; ?></td>
+  <td><?=$placa; ?></td>
   <td><?=$time; ?></td>
   <td><?=$stat; ?></td>
   <td><a href="<?=$url;?> " class="btn btn-default" type="submit"><span class="glyphicon glyphicon-save-file"></span> Print</a></td>

@@ -1,6 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>Invoice (Not Paid)</title>
+    <title>Factura (No Pagada)</title>
 
     <link href="assets/css/bootstrap.css" rel="stylesheet">  
            <link href="dataTables/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
@@ -31,8 +31,8 @@ body {
 <table class="table table-bordered table-hover" >
   <thead style="background: #000 !important; color: #fff;">
 
-     <th>Category</th>
-     <th>Description</th>
+     <th>Categoria</th>
+     <th>Descripcion</th>
 
   </thead>
 <tbody>
@@ -41,7 +41,7 @@ session_start();
 require 'mysqlConnect.php';
 require 'update_slots.php';
 $req_id = $_GET['request_id'];
-    $req = "SELECT `requests`.`id`, `parking_id`, `slots`, `hours`, `cost`, `time`, `status`,`location`, `street`, `name` FROM `requests`,`parkings` WHERE `requests`.`parking_id`=`parkings`.`id` AND `requests`.`id`='$req_id ' AND `requests`.`customer`= '{$_SESSION['driver_email']}' ";
+    $req = "SELECT `requests`.`id`, `parking_id`, `slots`, `hours`, `cost`, `time`, `status`,`location`, `street`, `name`, `placa`, `vehiculo` FROM `requests`,`parkings` WHERE `requests`.`parking_id`=`parkings`.`id` AND `requests`.`id`='$req_id ' AND `requests`.`customer`= '{$_SESSION['driver_email']}' ";
 
     $res = mysqli_query($con, $req);
 
@@ -56,46 +56,58 @@ while ($request = mysqli_fetch_array($res)) {
     $location = $request['location'];
     $when = $request['time'];
     $street = $request['street'];
+    $vehiculo = $request['vehiculo'];
+    $placa = $request['placa'];
 
 ?>
 
 <tr>
-<td>Parking Name:</td>
-<td><?=$parking; ?> Parking</td>
+<td>Nombre de Parqueadero:</td>
+<td><?=$parking; ?></td>
 </tr>
 
 <tr>
-<td>Email:</td>
-<td><?=$_SESSION['driver_email']; ?> Parking</td>
+<td>Tipo de Auto:</td>
+<td><?=$vehiculo; ?></td>
 </tr>
 
 <tr>
-<td>Parking location:</td> 
-<td><?=$location; ?> Area</td>
+<td>Placa:</td>
+<td><?=$placa; ?> </td>
 </tr>
 
 <tr>
-<td>Parking street:</td>
- <td><?=$street; ?> Street</td>
+<td>Correo:</td>
+<td><?=$_SESSION['driver_email']; ?></td>
+</tr>
+
+<tr>
+<td>Localizacion:</td> 
+<td><?=$location; ?></td>
+</tr>
+
+<tr>
+<td>Direccion de Parqueadero:</td>
+ <td><?=$street; ?></td>
  </tr>
 
 <tr>
-<td>Number Of Hours:</td> 
-<td><?=$hours; ?> Hours</td>
+<td>Hora de Parqueo:</td> 
+<td><?=$hours; ?> Hora</td>
 </tr>
 
 <tr>
-<td>Number Of Slots:</td> 
-<td><?=$slots; ?> Slots</td>
+<td>Numero de Espacio:</td> 
+<td><?=$slots; ?></td>
 </tr>
 
 <tr>
-<td>Amount Charged:</td> 
-<td>Cop. <?=$cost; ?></td>
+<td>Saldo Total:</td> 
+<td>Cop. $<?=$cost; ?></td>
 </tr>
 
 <tr>
-<td>Request Time:</td>
+<td>Tiempo y Fecha:</td>
 <td><?=$when; ?> </td>
 </tr>
 <?php    

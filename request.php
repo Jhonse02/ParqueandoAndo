@@ -98,10 +98,11 @@ require 'attendant_details.php';
                       <th>cost</th>
                       <th>Customer</th>
                       <th>Status</th>
+                      <th>Placa</th>
                       <th>Print </th>
                       </tr>
 <?php
-$sel="SELECT `requests`.`id`, `slots`, `hours`, `cost`, `customer`, `time`, `status`,`name` FROM `requests`,`parkings` WHERE `parkings`.`id`=`requests`.`parking_id` ";
+$sel="SELECT `requests`.`id`, `slots`, `hours`, `cost`, `customer`, `time`, `status`,`name`,`placa` FROM `requests`,`parkings` WHERE `parkings`.`id`=`requests`.`parking_id` ";
 $run=mysqli_query($con,$sel)or die(mysqli_error($con));
 $i=0;
 while($row=mysqli_fetch_array($run)){
@@ -112,6 +113,7 @@ $hours=$row['hours'];
 $cost=$row['cost'];
 $customer=$row['customer'];
 $status=$row['status'];
+$placa=$row['placa'];
 $i++;
  
  $url = "attendant_receipt_print.php?request_id=".urlencode($id); 

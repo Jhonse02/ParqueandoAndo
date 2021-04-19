@@ -117,10 +117,12 @@ require 'update_slots.php';
                       <th>Costo</th>
                       <th>Cliente</th>
                       <th>Estado</th>
+                      <th>Placa</th>
+                      <th>Vehiculo</th>
                       </tr>
                       </thead>
 <?php
-$sel="SELECT `requests`.`id`, `slots`, `hours`, `cost`, `customer`, `time`, `status`,`name` FROM `requests`,`parkings` WHERE `parkings`.`id`=`requests`.`parking_id`";
+$sel="SELECT `requests`.`id`, `slots`, `hours`, `cost`, `customer`, `time`, `status`,`name`,`placa` ,`vehiculo`FROM `requests`,`parkings` WHERE `parkings`.`id`=`requests`.`parking_id`";
 $run=mysqli_query($con,$sel);
 $i=0;
 while($row=mysqli_fetch_array($run)){
@@ -131,6 +133,8 @@ $hours=$row['hours'];
 $cost=$row['cost'];
 $customer=$row['customer'];
 $status=$row['status'];
+$placa=$row['placa'];
+$vehiculo=$row['vehiculo'];
 $i++;
 
 ?>
@@ -142,6 +146,8 @@ $i++;
 <td><?php echo $cost; ?></td>
 <td><?php echo $customer; ?></td>
 <td><?php echo $status; ?></td>
+<td><?php echo $placa; ?></td>
+<td><?php echo $vehiculo; ?></td>
 </tr>
 <?php }?>
 </table>

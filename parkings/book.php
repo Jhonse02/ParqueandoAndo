@@ -14,7 +14,7 @@ if($_POST){
 $check_cust = "SELECT * FROM `requests` WHERE `customer`='$customer' AND `status`='requested'";
 $result_cust = mysqli_query($con, $check_cust);
 if(mysqli_num_rows($result_cust)>0){
-  echo '<div class="alert alert-warning" role="alert"><span class="glyphicon glyphicon-warning-sign"></span>  ALERT!! It seems you have a pending request that have not been approved yet, be patient your packing request will be approved soon!! <span class="glyphicon glyphicon-warning-sign"></span> </div>';
+  echo '<div class="alert alert-warning" role="alert"><span class="glyphicon glyphicon-warning-sign"></span>  ¡¡ALERTA!! PARECE QUE TIENE UNA SOLICITUD PENDIENTE QUE TODAVÍA NO HA SIDO APROBADA, TENGA PACIENCIA ¡SU SOLICITUD SERÁ APROBADA PRONTO!  <span class="glyphicon glyphicon-warning-sign"></span> </div>';
 }else{
 
 
