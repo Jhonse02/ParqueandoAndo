@@ -91,7 +91,7 @@ while ($request = mysqli_fetch_array($res)) {
 
 <tr>
 <td>Amount Charged:</td> 
-<td>Ksh. <?=$cost; ?></td>
+<td>Cop. <?=$cost; ?></td>
 </tr>
 
 <tr>

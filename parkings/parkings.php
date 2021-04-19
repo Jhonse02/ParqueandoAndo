@@ -129,7 +129,7 @@ $("#select<?=$parking_id; ?>").click(function(){
   var slot_hours1 = $("#hour<?=$parking_id; ?>").val();
     if(slots_cost1 > 0){
         if(slot_hours1==''){
-             $("#slot_status<?=$parking_id; ?>").html("Fill in input fields first").css("color", "red");
+             $("#slot_status<?=$parking_id; ?>").html("COMPLETE LOS CAMPOS DE ENTRADA PRIMERO").css("color", "red");
         }else{
           $.post("parkings/book.php",{slots_cost:slots_cost1, slot_hours:slot_hours1, slot_id:slot_id1}, function(data){
              $("#slot_status<?=$parking_id; ?>").html(data);

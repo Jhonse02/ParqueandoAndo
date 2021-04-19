@@ -106,7 +106,7 @@ else {
 
              <li class="list-group-item">
                <select class="form-control" onchange="filter_park()" id="street">
-                 <option value="">----[Buscar Ubicacion]----</option>
+                 <option value="">----[Buscar Por Ubicacion]----</option>
                  <option value="Calle 5">Calle 5</option>
                  <option value="Calle 25">Calle 25</option>
                  <option value="Calle 1">Calle 1</option>

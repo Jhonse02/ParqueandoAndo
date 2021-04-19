@@ -32,13 +32,13 @@ if(mysqli_num_rows($result_cust)>0){
               $book = "INSERT INTO `requests`(`id`, `parking_id`, `slots`, `hours`, `cost`, `customer`,`status`) VALUES (NULL,'$slot_id','$slot_no','$slot_hours','$slots_cost','$customer','requested')";
 
               if (mysqli_query($con, $book) && mysqli_query($con, $update)) {
-              echo "You have successfully Reserved this space";
+              echo "HA RESERVADO CON ÉXITO ESTE ESPACIO";
               }else{
-                echo "Failed to Reserve this parking space";
+                echo "No se pudo reservar este espacio de Parqueadero";
               }
 
         }else {
-          echo "ERROR!! Number of slots exceeds the remaining slots";
+          echo "¡¡ERROR!! El número de campos excede los campos restantes";
         }
 
 }

@@ -58,8 +58,8 @@ while ($request = mysqli_fetch_array($res)) {
   <td><?=$location; ?></td>
   <td><?=$street; ?></td>
   <td><?=$slots; ?></td>
-  <td><?=$hours; ?> hours</td>
-  <td>Ksh. <?=$cost; ?></td>
+  <td><?=$hours; ?> hora</td>
+  <td>Cop. <?=$cost; ?></td>
   <td><?=$time; ?></td>
   <td><?=$stat; ?></td>
   <td></td>
@@ -98,8 +98,8 @@ $url = "print1.php?request_id=".urlencode($id);
   <td><?=$location; ?></td>
   <td><?=$street; ?></td>
   <td><?=$slots; ?></td>
-  <td><?=$hours; ?> hours</td>
-  <td>Ksh. <?=$cost; ?></td>
+  <td><?=$hours; ?> hora</td>
+  <td>Cop. <?=$cost; ?></td>
   <td><?=$time; ?></td>
   <td><?=$stat; ?></td>
   <td><a href="<?=$url;?> " class="btn btn-default" type="submit"><span class="glyphicon glyphicon-save-file"></span> Print</a></td>
