@@ -12,7 +12,7 @@ require 'attendant_details.php';
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>smart-parking</title>
+    <title>ParqueAndoando/title>
     <link rel="icon" href="assets/img/ny.jpg" />
 
     <!-- Bootstrap core CSS -->
@@ -43,7 +43,7 @@ require 'attendant_details.php';
       <header class="header black-bg">
 
             <!--inicio logo-->
-            <a href="index.php" class="logo"><b>Smart-parking</b></a>
+            <a href="index.php" class="logo"><b>ParqueandoAndo</b></a>
             <!--fin logo-->
                <div class="top-menu">
             	<ul class="nav pull-right top-menu">
