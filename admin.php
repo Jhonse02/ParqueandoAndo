@@ -167,9 +167,9 @@ else {
         $(document).ready(function () {
         var unique_id = $.gritter.add({
             // (string | obligatorio) el encabezado de esta notificacion
-            title: 'Welcome to smart-parking!',
+            title: 'Bienvenido a ParqueandoAndo!',
             // (string | obligatorio) El texto dentro de la notificacion
-            text: 'Makes your parking easier.'
+            text: 'Facilita tu estacionamiento.'
             // (string | opcional) La imagen puesta en la izquierda
             image: 'assets/img/ui-sam.jpg',
             // (bool | opcional) Si quieres que se desvanezca por sí solo o se quede ahí

@@ -52,7 +52,7 @@ while ($parking = mysqli_fetch_array($parkings_result)) {
       <li class="list-group-item"><span class="glyphicon glyphicon-map-marker"></span> <?=$parking_location; ?></li>
 
     </ul>
-    <button class="btn btn-default" data-backdrop="false" type="button" data-toggle="modal" data-target="#reserve<?=$parking_id ; ?>">select Now!!</button>
+    <button class="btn btn-default" data-backdrop="false" type="button" data-toggle="modal" data-target="#reserve<?=$parking_id ; ?>">Seleccionar Ahora!!</button>
 
   </div>
 </div>
@@ -62,18 +62,18 @@ while ($parking = mysqli_fetch_array($parkings_result)) {
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel"><?=$parking_name; ?> Reservacion</h4>
+        <h4 class="modal-title" id="myModalLabel"> Reservacion De Parqueo En: <?=$parking_name; ?></h4>
       </div>
       <div class="modal-body">
         <ul class="list-group">
           <li class="list-group-item"><span class="glyphicon glyphicon-home"></span> <?=$parking_name; ?></li>
           <li class="list-group-item"><span class="glyphicon glyphicon-tag"></span> <?=$parking_remaining; ?> Espacio Disponible</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-credit-card"></span> Ksh. <?=$parking_price; ?> Valor Por Espacio</li>
-          <li class="list-group-item " ><span class="glyphicon">Ksh. </span> <p class="total" id="total<?=$parking_id; ?>"><?=$parking_slot; ?> </p></li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-credit-card"></span> Cop. <?=$parking_price; ?> Valor Por Espacio</li>
+          <li class="list-group-item " ><span class="glyphicon">Cop. </span> <p class="total" id="total<?=$parking_id; ?>"><?=$parking_slot; ?> </p></li>
 
           <li class="list-group-item">
             <div class="input-group">
-              <input type="text" class="form-control"  id="hour<?=$parking_id; ?>" placeholder="Number of Hours" aria-describedby="basic-addon2">
+              <input type="text" class="form-control"  id="hour<?=$parking_id; ?>" placeholder="Digite el Numero de Horas" aria-describedby="basic-addon2">
               <span class="input-group-addon" id="basic-addon2">Horas</span>
             </div>
           </li>
@@ -182,7 +182,7 @@ while ($parking = mysqli_fetch_array($parkings_result)) {
       <li class="list-group-item"><span class="glyphicon glyphicon-home"></span> <?=$parking_name; ?>  (<?=$parking_remaining;?>)</li>
 
     </ul>
-    <button class="btn btn-default" type="button" data-backdrop="false" data-toggle="modal" data-target="#reserve<?=$parking_id ; ?>">select Now!!</button>
+    <button class="btn btn-default" type="button" data-backdrop="false" data-toggle="modal" data-target="#reserve<?=$parking_id ; ?>">Seleccionar Ahora</button>
 
   </div>
 </div>
