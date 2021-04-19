@@ -26,7 +26,7 @@ body {
 
 <div class="panel-body">
 <div class="table-responsive col-md-6 col-md-offset-3">
-<a href="request.php" type="button" class="btn btn-primary btn-lg"><i class="fa fa-home" aria-hidden="true"></i> Go Back Home</a>
+<a href="request.php" type="button" class="btn btn-primary btn-lg"><i class="fa fa-home" aria-hidden="true"></i>Volver a Inicio</a>
 <hr>
 <table class="table table-bordered table-hover" >
   <thead style="background: #000 !important; color: #fff;">
