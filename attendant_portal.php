@@ -19,6 +19,8 @@ else {
     <link rel="icon" href="assets/img/logo.ico" />
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
@@ -44,19 +46,33 @@ else {
       <!-- **********************************************************************************************************************************************************
       Contenido de la barra superior y notificaciones
       *********************************************************************************************************************************************************** -->
-      <!-- inicio header -->
-      <header class="header black-bg">
+     <!-- inicio header -->
+     <header class="header black-bg">
 
-            <!-- inicio logo -->
-            <a href="index.php" class="logo"><b>PARQUEANDOANDO</b></a>
-            <!-- inicio logo -->
-            <div class="top-menu">
-            	<ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="logout.php" style="background-color:#ffd777;">Logout</a></li>
-            	</ul>
-            </div>
-        </header>
-      <!-- fin header -->
+<!-- inicio logo -->
+
+    <a href="index.php" class="logo"><img src="assets/img/assistant-144.png" class="img-circle"><b>Parqueando Ando</b></a>
+
+<!-- fin logo -->
+<div class="top-menu">
+    <ul class="nav pull-right top-menu">
+        <li class="header-user-banner">
+        
+        <button class="btn btn-banner btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-user mt-button" style="margin-right: 7px;"></i>
+        <?php echo $_SESSION['username']; ?>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="logout.php">Cerrar sesión</a>
+        </div>
+        </li>
+        <div class="dropdown">
+        
+        </div>
+    </ul>
+</div>
+</header>
+<!-- fin header -->
 
       <!-- **********************************************************************************************************************************************************
       Menú barra lateral principal (sidebar)
@@ -65,16 +81,18 @@ else {
       <aside>
           <div id="sidebar"  class="nav-collapse ">
               <!-- inicio menú sidebar -->
-              <ul class="sidebar-menu" id="nav-accordion">
-
-              	  <p class="centered"><a href="#"><img src="assets/img/assistant-144.png" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered"> <?php echo $_SESSION['username']; ?> </h5>
-                
-
-              </ul>
-              <ul>
-                  <li><a  href="request.php">Requests</a></li>
-              </ul>
+              <ul class="sidebar-menu" id="nav-accordion">  
+                <li class="mt">
+                <h2 class="ul-sidebar-menu-title">Menús</h2>
+                      <a href="admin.php">
+                          <i class="fa fa-home mt-button"></i>
+                          <span>Inicio</span>
+                      <a href="admin_request.php">
+                          <i class="fa fa-book mt-button"></i>
+                          <span>Requerimientos</span>
+                      </a>
+                  </li>       
+            </ul>
               <!-- inicio menú sidebar -->
           </div>
       </aside>
@@ -131,6 +149,10 @@ else {
 
     <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
     <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
     <!--script para esta página -->
     <script src="assets/js/sparkline-chart.js"></script>

@@ -34,14 +34,14 @@ require 'mysqlConnect.php';
 	  	<div class="container">
 
 		      <form class="form-login" action="admin_login.php" method="post">
-		        <h2 class="form-login-heading">REGISTRARSE</h2>
+		        <h2 class="form-login-heading">ACCESO</h2>
 		        <div class="login-wrap">
 		            <input type="text" name="email" class="form-control" placeholder="Correo" autofocus>
 		            <br>
 		            <input type="password" name="password"  class="form-control" placeholder="Contraseña">
               </br>
             </br><strong></strong>
-		            <button class="btn btn-theme btn-block" href="index.php" name='admin_login'  type="submit"><i class="fa fa-lock"></i>INICIAR</button>
+		            <button class="btn btn-theme btn-block" href="index.php" name='admin_login'  type="submit"><i class="fa fa-lock"></i> INICIAR</button>
 		          <!-- Modal -->
 		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
 		              <div class="modal-dialog">
