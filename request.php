@@ -43,7 +43,7 @@ require 'attendant_details.php';
       <header class="header black-bg">
 
             <!--logo start-->
-            <a href="index.php" class="logo"><b>Smart-parking</b></a>
+            <a href="index.php" class="logo"><b>ParqueandoAndo</b></a>
             <!--logo end-->
                <div class="top-menu">
             	<ul class="nav pull-right top-menu">
