@@ -67,7 +67,7 @@ require 'attendant_details.php';
                   <a><h5  style="text-transform:uppercase;"> <?=isset($fname) ." ".isset($lname); ?></h5></a>
                       <a href="attendant_portal.php">
                           <i class="fa fa-dashboard"></i>
-                          <span>Dashboard</span>
+                          <span>Inicio</span>
                       </a>
                   </li>
               </ul>

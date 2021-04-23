@@ -77,7 +77,7 @@ if(isset($_GET['edit'])){
                     <li class="mt">
                       <a href="admin.php">
                           <i class="fa fa-dashboard"></i>
-                          <span>Dashboard</span>
+                          <span>Inicio</span>
                       </a>
                   </li>
 
