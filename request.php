@@ -12,7 +12,7 @@ require 'attendant_details.php';
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>smart-parking</title>
+    <title>ParqueandoAndo</title>
     <link rel="icon" href="assets/img/ny.jpg" />
 
     <!-- Bootstrap core CSS -->
