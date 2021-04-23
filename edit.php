@@ -93,7 +93,7 @@ if(isset($_GET['edit'])){
       <!--inicio main content-->
       <section id="main-content">
           <section class="wrapper site-min-height">
-            <h3><i class="fa fa-angle-right"></i> Update Parkings Details</h3>
+            <h3><i class="fa fa-angle-right"></i> Actualizar los detalles de los Parqueaderos</h3>
           	<div class="row mt">
           		<div class="col-lg-12">
               <form class="form-horizontal" action="" method="POST" enctype="multipart/form-data">
@@ -124,7 +124,7 @@ if(isset($_GET['edit'])){
         </div>
         <div class="form-group">
           <div class="col-sm-offset-6 col-sm-10">
-            <button type="submit" class="btn btn-default" name="update">Update</button>
+            <button type="submit" class="btn btn-default" name="update">Actualizar</button>
           </div>
         </div>
       </form>
