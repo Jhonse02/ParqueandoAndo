@@ -12,6 +12,7 @@ require 'mysqlConnect.php';
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
     <title>Asistente</title>
+    <link rel="icon" href="assets/img/logo.ico" />
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
