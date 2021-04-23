@@ -47,7 +47,7 @@ require 'attendant_details.php';
             <!--logo end-->
                <div class="top-menu">
             	<ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="attendant_login.php" style="background-color:#ffd777;">Logout</a></li>
+                    <li><a class="logout" href="attendant_login.php" style="background-color:#ffd777;">Cerrar sesión</a></li>
             	</ul>
             </div>
 
