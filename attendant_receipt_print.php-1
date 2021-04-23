@@ -50,9 +50,9 @@ while ($request = mysqli_fetch_array($res)) {
     $parking = $request['name'];
     $slots= $request['slots'];
     $hours = $request['hours'];
-    $cost = $request['cost'];
-    $vehiculo = $request['vehiculo'];
+    $placa = $request['vehiculo'];
     $placa = $request['placa'];
+    $cost = $request['cost'];
     $stat = $request['status'];
     $location = $request['location'];
     $when = $request['time'];
@@ -63,8 +63,9 @@ while ($request = mysqli_fetch_array($res)) {
 
 
 
+
 $now = new DateTime();
-$now->setTimezone(new DateTimeZone('Africa/Nairobi'));
+$now->setTimezone(new DateTimeZone('America/Bogota'));
 $before = new DateTime($when);
 $interval = $now->diff($before);
 $elapsed_h = $interval->format('%y years %m months %a days %h hours %i minutes %s seconds');
@@ -118,36 +119,54 @@ if ($ttotal>60) {
 
 <tr>
 <td>Numero de Horas:</td>
-<td><?=$totalt; ?> Hours</td>
+<td><?=$totalt; ?> Horas</td>
 </tr>
 
 <tr>
-<td>Numero de Horas:</td>
-<td><?=$vehiculo; ?> Hours</td>
+<td>Vehiculo:</td>
+<td><?=$vehiculo; ?></td>
 </tr>
 
 <tr>
-<td>Numero de Horas:</td>
-<td><?=$placa; ?> Hours</td>
+<td>Vehiculo:</td>
+<td><?=$vehiculo; ?></td>
+</tr>
+
+<tr>
+<td>Vehiculo:</td>
+<td><?=$vehiculo; ?></td>
+</tr>
+
+<tr>
+<td>Vehiculo:</td>
+<td><?=$vehiculo; ?></td>
+</tr>
+
+<tr>
+<td>Placa:</td>
+<td><?=$placa; ?></td>
 </tr>
 
 <tr>
 <td>Numero de Espacios:</td>
-<td><?=$slots; ?> Slots</td>
+<td><?=$slots; ?></td>
 </tr>
 
 <tr>
-<td>Dinero Cargado:</td>
-<td>COP. <?=$charge; ?></td>
+<td>Valor:</td>
+<td>COP.$ <?=$charge; ?></td>
 </tr>
 
 <tr>
-<td>Request Time:</td>
+<td>Tiempo:</td>
 <td><?=$when; ?> </td>
 </tr>
 
+
+
+
 <tr>
-<td>Status:</td>
+<td>Estado:</td>
 <td><?php
 if($totalt >= $hours){
     ?>
@@ -155,7 +174,7 @@ if($totalt >= $hours){
     <?php
 }else{
     ?>
-       Cumplió con el requisito de tiempo
+      Cumplió con el requisito de tiempo
     <?php
 }
 
@@ -177,7 +196,7 @@ if($totalt >= $hours){
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- METISMENU SCRIPTS -->
     <script src="assets/js/jquery.metisMenu.js"></script>
-     <!-- DATA TABLE SCRIPTS -->
+     <!-- Scripts tablas de datos -->
         <script type="text/javascript" src="dataTables/js/jquery.min.js"></script>
          <script type="text/javascript" src="dataTables/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="dataTables/js/jquery.dataTables.min.js"></script>

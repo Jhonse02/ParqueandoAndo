@@ -53,7 +53,7 @@ background-size: cover;
 </head>
 <body >                
 <div id="header" class="container_12">
-     <strong><small>Invoice(Not Paid)</small></strong>
+     <strong><small>Recibo (No Facturado)</small></strong>
 </div>
 
 <div class="container_12 clearfix recept">
@@ -88,33 +88,33 @@ while ($request = mysqli_fetch_array($res)) {
 
 ?>
 <tr>
-<td>Parking Name:</td>
+<td>Nombre de Parqueadero:</td>
 <td><?=$parking; ?></td>
 <tr>
 
 <tr>
-<td>Parking location:</td> 
+<td>Localizacion:</td> 
 <td><?=$location; ?></td>
 </tr>
 
 <tr>
-<td>Parking street:</td>
+<td>Direccion:</td>
  <td><?=$street; ?></td>
  </tr>
 
 <tr>
-<td>Number Of Hours:</td> 
-<td><?=$hours; ?> Hours</td>
+<td>Numero de Horas:</td> 
+<td><?=$hours; ?> Horas</td>
 </tr>
 
 <tr>
-<td>Number Of Slots:</td> 
-<td><?=$slots; ?> Slots</td>
+<td>Numero de Espacios:</td> 
+<td><?=$slots; ?></td>
 </tr>
 
 <tr>
-<td>Amount Charged:</td> 
-<td>Ksh. <?=$cost; ?></td>
+<td>Valor:</td> 
+<td>COP $ <?=$cost; ?></td>
 </tr>
 
 <?php    

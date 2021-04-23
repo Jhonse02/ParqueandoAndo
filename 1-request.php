@@ -12,7 +12,7 @@ require 'attendant_details.php';
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>smart-parking</title>
+    <title>ParqueAndoando/title>
     <link rel="icon" href="assets/img/ny.jpg" />
 
     <!-- Bootstrap core CSS -->
@@ -20,7 +20,7 @@ require 'attendant_details.php';
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
-    <!-- Custom styles for this template -->
+    <!-- Estilos personalizados para esta página -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
 
@@ -37,14 +37,14 @@ require 'attendant_details.php';
 
   <section id="container" >
       <!-- **********************************************************************************************************************************************************
-      TOP BAR CONTENT & NOTIFICATIONS
+      Contenido barra superior y notificaciones
       *********************************************************************************************************************************************************** -->
-      <!--header start-->
+      <!--inicio header-->
       <header class="header black-bg">
 
-            <!--logo start-->
-            <a href="index.php" class="logo"><b>Smart-parking</b></a>
-            <!--logo end-->
+            <!--inicio logo-->
+            <a href="index.php" class="logo"><b>ParqueandoAndo</b></a>
+            <!--fin logo-->
                <div class="top-menu">
             	<ul class="nav pull-right top-menu">
                     <li><a class="logout" href="attendant_login.php" style="background-color:#ffd777;">Logout</a></li>
@@ -52,15 +52,15 @@ require 'attendant_details.php';
             </div>
 
         </header>
-      <!--header end-->
+      <!--fin header-->
 
       <!-- **********************************************************************************************************************************************************
-      MAIN SIDEBAR MENU
+      Menú barra lateral principal (sidebar)
       *********************************************************************************************************************************************************** -->
-      <!--sidebar start-->
+      <!--inicio sidebar-->
       <aside>
           <div id="sidebar"  class="nav-collapse ">
-              <!-- sidebar menu start-->
+              <!-- inicio menú sidebar-->
               <ul class="sidebar-menu" id="nav-accordion">
                     
                   <li class="mt">
@@ -71,15 +71,15 @@ require 'attendant_details.php';
                       </a>
                   </li>
               </ul>
-              <!-- sidebar menu end-->
+              <!-- fin menú sidebar-->
           </div>
       </aside>
-      <!--sidebar end-->
+      <!--fin sidebar-->
 
       <!-- **********************************************************************************************************************************************************
-      MAIN CONTENT
+      Contenido principal (main content)
       *********************************************************************************************************************************************************** -->
-      <!--main content start-->
+      <!--inicio main content-->
       <section id="main-content">
           <section class="wrapper">
 				<div class="row">
@@ -89,21 +89,20 @@ require 'attendant_details.php';
 
 	                  	  	  <hr>
               <table class="table table-bordered">
-                      <tr align="center"><td colspan="6"><h2>Ver todas las solicitudes</h2></tr>
+                      <tr align="center"><td colspan="6"><h2>View All Requests</h2></tr>
                       <tr align="center">
                       <th>S.N </th>
-                      <th>Nombre Parqueadero</th>
-                      <th>Espacio</th>
-                      <th>Hora</th>
-                      <th>Costo</th>
-                      <th>Vehiculo</th>
+                      <th>parking_name</th>
+                      <th>Slots </th>
+                      <th>hour</th>
+                      <th>cost</th>
+                      <th>Customer</th>
+                      <th>Status</th>
                       <th>Placa</th>
-                      <th>Correo</th>
-                      <th>Estado</th>
-                      <th>Imprimir</th>
+                      <th>Print </th>
                       </tr>
 <?php
-$sel="SELECT `requests`.`id`, `slots`, `hours`, `cost`, `customer`, `time`, `status`,`name`,`vehiculo`,`placa` FROM `requests`,`parkings` WHERE `parkings`.`id`=`requests`.`parking_id` ";
+$sel="SELECT `requests`.`id`, `slots`, `hours`, `cost`, `customer`, `time`, `status`,`name`,`placa` FROM `requests`,`parkings` WHERE `parkings`.`id`=`requests`.`parking_id` ";
 $run=mysqli_query($con,$sel)or die(mysqli_error($con));
 $i=0;
 while($row=mysqli_fetch_array($run)){
@@ -111,11 +110,10 @@ $id=$row['id'];
 $parking_name=$row['name'];
 $slots=$row['slots'];
 $hours=$row['hours'];
-$vehiculo=$row['vehiculo'];
-$placa=$row['placa'];
 $cost=$row['cost'];
 $customer=$row['customer'];
 $status=$row['status'];
+$placa=$row['placa'];
 $i++;
  
  $url = "attendant_receipt_print.php?request_id=".urlencode($id); 
@@ -126,8 +124,6 @@ $i++;
 <td><?php echo $slots; ?></td>
 <td><?php echo $hours; ?></td>
 <td><?php echo $cost; ?></td>
-<td><?php echo $vehiculo; ?></td>
-<td><?php echo $placa; ?></td>
 <td><?php echo $customer; ?></td>
 <td><?php echo $status; ?></td>
 <td><?php
@@ -159,12 +155,12 @@ if(isset($_GET['delete']))
 		</section><!--wrapper -->
       </section><!-- /MAIN CONTENT -->
 
-      <!--main content end-->
+      <!--fin main content-->
 
-      <!--footer end-->
+      <!--fin footer-->
   </section>
 
-    <!-- js placed at the end of the document so the pages load faster -->
+    <!-- js puesto al final del documento para que la página cargue más rápido -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
@@ -172,13 +168,13 @@ if(isset($_GET['delete']))
     <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
 
 
-    <!--common script for all pages-->
+    <!--Script general para todas las páginas-->
     <script src="assets/js/common-scripts.js"></script>
 
-    <!--script for this page-->
+    <!--Script para esta página-->
 
   <script>
-      //custom select box
+      //cuadro de selección personalizado (custom select box)
 
       $(function(){
           $('select.styled').customSelect();
