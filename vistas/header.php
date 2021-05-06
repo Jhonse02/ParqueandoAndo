@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>Parqueadero</title>
+        <title>Parqueando Ando</title>
         <meta charset="UTF-8">
         <link rel="shortcut icon" type="image/png" href="public/img/logo.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1">

@@ -2,7 +2,7 @@
 session_start();
 
 //url base
-define("URL_BASE", 'http://localhost/parqueadero_web_php/');
+define("URL_BASE", 'http://localhost/ParqueandoAndo/');
 
 //verificar login
 function verificar_login() {
